@@ -1,22 +1,11 @@
-terraform {
-  required_providers {
-    christmas-tree = {
-      source  = "cappyzawa/christmas-tree"
-      version = "0.3.1"
-    }
-  }
+resource "random_uuid" "random" {
+  count = 4
 }
 
 resource "christmas-tree" "tree" {
+  count = length(random_uuid.random)
 
-  for_each = {
-    "key1" = "value1",
-    "key2" = "value2",
-    "key3" = "value3",
-    "key4" = "value4",
-  }
-
-  path = "/tmp/lab-tree-${each.key}"
+  path = "/tmp/lab-tree-${random_uuid.random[count.index].result}"
 }
 
 output "trees" {
