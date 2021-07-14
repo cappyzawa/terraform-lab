@@ -6,7 +6,6 @@ provider "registry.terraform.io/cappyzawa/christmas-tree" {
   constraints = "0.3.1"
   hashes = [
     "h1:mlWhO7AEIo46kSnI2qInEgAGsry6Yx21Rj1vBQ+nv/s=",
-    "h1:zi9GE92QaNaqbKnJXiyEnSTU2Awlz6hwb38193qDey4=",
     "zh:175ce136d000fe7deec9d2564b550b1532a4b6762d0a5632e1251d35f3abef37",
     "zh:1a2258649498c16be7ec9dc22ea6eae452fa12a5eb8642605c14b131adcf4f3a",
     "zh:1bbdd86d6cef2916d5ff37eda531424ca32cf3a90df634a30fbb55c50af3fbad",
